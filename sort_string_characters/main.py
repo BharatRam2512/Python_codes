@@ -1,0 +1,6 @@
+x=input("enter a string1: ")
+y=input("enter a string2: ")
+sorted_x=''.join(sorted(x))
+sorted_y=''.join(sorted(y))
+print("Sorted string1:", sorted_x)
+print("Sorted string2:", sorted_y)
