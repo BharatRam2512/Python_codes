@@ -1,0 +1,1 @@
+Given a 2D NumPy array, write a function to select and return a subarray consisting of the first two rows and the last two columns.
