@@ -1,0 +1,1 @@
+Write a function to count the number of palindromic substrings in a given string. For instance, in the string “aba”, there are three palindromic substrings: “a”, “b”, “aba”.
