@@ -1,19 +1,18 @@
-def findMedianSortedArrays(nums1,nums2):
-    nums3=sorted(nums1+nums2)
-    l=0
-    h=len(nums3)
-    num1=[1,3]
-    if (len(nums3)%2)==1:
-        mid=(((l+h)//2))
-        x=float(nums3[mid])
-        return x
-
-    elif(len(nums3)%2==0):
-        x=(l+h)//2
-        y=x-1
-        mid=((nums3[x]+nums3[y])/2)
-        return mid
-nums1=[1,3]
-nums2=[2,4]
-median=findMedianSortedArrays(nums1, nums2)
-print(median)
+def binary_search(arr,n,key):
+    low=0
+    high=n
+    while low<=high:
+        mid=(low+high)//2
+        if arr[mid]==key:
+            return mid
+        elif arr[mid]>key:
+            high=mid-1
+        else:
+            low=mid+1
+    return 0
+arr1=list(map(int,input("Enter the elements of the array: ").split()))
+arr=sorted(set(arr1))
+print("Elements after sorting: ",arr)
+n=len(arr)
+key=int(input("Enter the element to be searched: "))
+print("The result present in the index: ",binary_search(arr,n,key))
