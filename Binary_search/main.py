@@ -15,4 +15,8 @@ arr=sorted(set(arr1))
 print("Elements after sorting: ",arr)
 n=len(arr)
 key=int(input("Enter the element to be searched: "))
+<<<<<<< HEAD
 print("The result present in the index: ",binary_search(arr,n,key))
+=======
+print("The result present in the index: ",binary_search(arr,n,key))
+>>>>>>> 1011a9321961b35d79e7764f639be989f0550832
