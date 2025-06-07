@@ -1,5 +1,4 @@
 def palindromic_substring(str):
-    count=0
     str1=" "
     for i in range(len(str)):
         for j in range(i, len(str)):
